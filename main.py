@@ -58,7 +58,7 @@ def main():
         choice = input("Chọn chức năng (1-4): ").strip()
 
         match choice:
-            case 1:
+            case "1":
                 print("\n--- NHẬP HÀNG ---")
 
                 amount = input("Nhập số lượng sản phẩm muốn thêm: ").strip()
@@ -75,7 +75,7 @@ def main():
 
                 add_stock(amount)
 
-            case 2:
+            case "2":
                 print("\n--- BÁN HÀNG ---")
 
                 quantity = input("Nhập số lượng mua: ").strip()
@@ -110,10 +110,10 @@ def main():
                 print(f"Tổng thanh toán: ${final_total}")
                 print("Đã bán thành công!")
 
-            case 3:
+            case "3":
                 print_report()
 
-            case 4:
+            case "4":
                 print("Lưu dữ liệu và thoát chương trình.")
                 break
 
